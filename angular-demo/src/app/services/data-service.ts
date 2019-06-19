@@ -4,7 +4,18 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class DataService {
-    constructor(private location: Location) {
+    constructor() {
+    }
+
+    public getList(): Array<string> {
+        return [
+            "item 1",
+            "item 2",
+            "item 3",
+            "item 4",
+            "item 5",
+            "item 6"
+        ];
     }
     
     public getProfile(): IProfile {

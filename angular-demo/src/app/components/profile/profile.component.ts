@@ -11,7 +11,6 @@ export class ProfileComponent {
     public profile: IProfile;
 
     constructor(private data: DataService) {
-        debugger;
         this.profile = this.data.getProfile();
     }
 }
